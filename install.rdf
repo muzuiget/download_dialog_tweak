@@ -29,12 +29,12 @@
     <Description>
         <em:locale>zh-CN</em:locale>
         <em:name>Download Dialog Tweak</em:name>
-        <em:description>增强下载下载对话框，添加更多选项</em:description>
+        <em:description>增强下载对话框，添加更多选项</em:description>
     </Description>
     <Description>
         <em:locale>zh-TW</em:locale>
         <em:name>Download Dialog Tweak</em:name>
-        <em:description>增強下載下載對話框，添加更多選項</em:description>
+        <em:description>增強下載對話框，添加更多選項</em:description>
     </Description>
     </em:localized>
 
