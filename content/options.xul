@@ -12,7 +12,7 @@
                     name="extensions.downloaddialogtweak.sendto"/>
     </preferences>
 
-    <label value="&SendtoUrls;" />
+    <label value="&SendtoUrlEntries;" />
     <textbox flex="1" multiline="true" wrap="off" rows="12" cols="54"
              style="font-family: 'DejaVu Sans Mono',monospace;"
              preference="sendto" />
