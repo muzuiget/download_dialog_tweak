@@ -4,11 +4,12 @@
 <Description about="urn:mozilla:install-manifest">
 
     <em:id>downloaddialogtweak@qixinglu.com</em:id>
-    <em:version>0.2.4</em:version>
+    <em:version>{{ version }}</em:version>
     <em:type>2</em:type>
     <em:bootstrap>true</em:bootstrap>
-    <em:unpack>false</em:unpack>
+    <em:unpack>{{ unpack }}</em:unpack>
     <em:optionsURL>chrome://downloaddialogtweak/content/options.xul</em:optionsURL>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
 
     <!-- Front End MetaData -->
     <em:name>Download Dialog Tweak</em:name>
@@ -19,23 +20,20 @@
     <em:targetApplication>
     <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>17.0</em:minVersion>
-        <em:maxVersion>28.*</em:maxVersion>
+        <em:minVersion>52.0</em:minVersion>
+        <em:maxVersion>55.*</em:maxVersion>
     </Description>
     </em:targetApplication>
 
     <!-- Localize -->
     <em:localized>
+{% for locale in locales %}
     <Description>
-        <em:locale>zh-CN</em:locale>
-        <em:name>Download Dialog Tweak</em:name>
-        <em:description>增强下载对话框，添加更多选项</em:description>
+        <em:locale>{{ locale.lang }}</em:locale>
+        <em:name>{{ locale.name }}</em:name>
+        <em:description>{{ locale.desc }}</em:description>
     </Description>
-    <Description>
-        <em:locale>zh-TW</em:locale>
-        <em:name>Download Dialog Tweak</em:name>
-        <em:description>增強下載對話框，添加更多選項</em:description>
-    </Description>
+{% endfor %}
     </em:localized>
 
 </Description>
