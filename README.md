@@ -15,6 +15,10 @@ Download Dialog Tweak is Firefox extension to tweak the download dialog.
 
 * [Mozilla Addons Page](https://addons.mozilla.org/firefox/addon/download-dialog-tweak/), formal release, signed xpi file, reviewed by AMO. 
 
+## Docs
+
+* [docs](docs/)
+
 ## License
 
 [MPLv2](http://www.mozilla.org/MPL/2.0/)
